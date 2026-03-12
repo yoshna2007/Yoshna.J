@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int a, , m, d;
+
+    printf("Enter number of days: ");
+    scanf("%d", &a);
+    m = a/ 30;
+    d = a % 30;
+    printf("Months m = %d\n", m);
+    printf("Days d = %d", d);
+
+    return 0;
+}
