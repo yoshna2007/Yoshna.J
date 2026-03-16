@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    char s[100];
+    int i=0, words=1;
+
+    printf("Enter sentence: ");
+    gets(s);
+
+    while(s[i] != '\0')
+    {
+        if(s[i]==' ')
+            words++;
+        i++;
+    }
+
+    printf("Number of words = %d", words);
+
+    return 0;
+}
