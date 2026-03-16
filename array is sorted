@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int a[5], i, flag=1;
+
+    for(i=0;i<5;i++)
+        scanf("%d",&a[i]);
+
+    for(i=0;i<4;i++){
+        if(a[i]>a[i+1]){
+            flag=0;
+            break;
+        }
+    }
+
+    if(flag)
+        printf("Array is Sorted");
+    else
+        printf("Array is Not Sorted");
+
+    return 0;
+}
