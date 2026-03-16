@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int a = 0, b = 1, c;
+    int count = 0;
+
+    printf("First 10 odd Fibonacci numbers:\n");
+
+    while(count < 10) {
+        c = a + b;
+        a = b;
+        b = c;
+
+        if(c % 2 != 0) {
+            printf("%d ", c);
+            count++;
+        }
+    }
+
+    return 0;
+}
