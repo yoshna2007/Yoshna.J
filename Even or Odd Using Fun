@@ -1,0 +1,8 @@
+#include <stdio.h>
+int check(int n){
+    return n%2==0;
+}
+int main(){
+    if(check(4)) printf("Even");
+    else printf("Odd");
+}
